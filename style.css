@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'lexend';
+}
+
+body {
+    background-color: #fbffff;
+    height: 100vh;
+}
+
+nav {
+    /* background-color: #00695C;
+    backdrop-filter: blur(10px) brightness(1.1);*/
+    width: 100%;
+    overflow: hidden;
+    padding: 30px;
+}
+
+/*.navbar .menu{
+    padding-right: 40px;
+}*/
+
+nav .thelogo img {
+    width: 43px;
+    padding-left: 10px;
+}
+
+nav .navbar {
+    overflow: hidden;
+    align-items: center;
+    /*padding:  0 20px;
+    padding-bottom: 4px ;*/
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.menu {
+    position: absolute;
+    /* Take it out of flex flow*/
+    left: 50%;
+    transform: translateX(-50%);
+    /* Perfect center independent of logo/button*/
+    align-items: center;
+    justify-content: center;
+}
+
+nav .navbar .menu ul{
+    display: flex;
+}
+
+nav .navbar ul li{
+    display: flex;
+    list-style: none;
+    padding: 0 15px;
+    padding-top: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .navbar li a{
+    color: #004a4185;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+nav .navbar li a:hover {
+    font-size: 16px;
+    transition: all 0.2s ease-in-out;
+}
+
+i{
+    display: none;
+    font-size: 40px;
+    color: #00695c;
+}
+#menubutton{
+    padding-top: 10px;
+}
+
+/* CSS */
+.button-36{
+    background-image: linear-gradient(145.88deg, #00695c);
+    border-radius: 25px;
+    border-style: none;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    font-weight: 700;
+    cursor: pointer;
+    flex-shrink: 0;
+    font-family: 'playfair display';
+    font-size: 16px;
+    height: 4rem;
+    letter-spacing: 0.5px;
+    word-spacing: 1px;
+    padding: 0 1.6rem;
+    text-align: center;
+    text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+    transition: all .5s ease-in-out;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.button-36:hover {
+    box-shadow: #64FFDA 0 1px 10px;
+    transition-duration: .1s;
+    font-size: 14.2px;
+}
+
+.navbar .text {
+    font-family: 'playfair display';
+    font-weight: 700;
+    font-size: 34px;
+    color: #00695C;
+}
+
+.navbar .text i {
+    padding: 0 10px;
+}
