@@ -184,8 +184,9 @@ p {
     left: 0;
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    gap: 4rem;
+    gap: 3rem;
     padding: 15px 20px;
     margin: 0;
     list-style: none;
