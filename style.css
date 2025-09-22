@@ -5,27 +5,24 @@
     font-family: 'lexend';
 }
 
-body {
-    background-color: #fbffff;
+.home {
     height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 125px;
 }
 
 nav {
-    /* background-color: #00695C;
-    backdrop-filter: blur(10px) brightness(1.1);*/
+    background: #ffffff3a;
+    backdrop-filter: blur(10px);
     width: 100%;
     overflow: hidden;
-    padding: 30px;
+    padding: 30px 30px 8px 25px;
+    position: fixed;
 }
 
-/*.navbar .menu{
-    padding-right: 40px;
-}*/
-
-nav .thelogo img {
-    width: 43px;
-    padding-left: 10px;
-}
 
 nav .navbar {
     overflow: hidden;
@@ -43,6 +40,7 @@ nav .navbar {
 
 .menu {
     position: absolute;
+    padding-right: 30px;
     /* Take it out of flex flow*/
     left: 50%;
     transform: translateX(-50%);
@@ -51,11 +49,11 @@ nav .navbar {
     justify-content: center;
 }
 
-nav .navbar .menu ul{
+nav .navbar .menu ul {
     display: flex;
 }
 
-nav .navbar ul li{
+nav .navbar ul li {
     display: flex;
     list-style: none;
     padding: 0 15px;
@@ -64,8 +62,8 @@ nav .navbar ul li{
     align-items: center;
 }
 
-nav .navbar li a{
-    color: #004a4185;
+nav .navbar li a {
+    color: #011a17a4;
     text-decoration: none;
     font-weight: 500;
     font-size: 15px;
@@ -76,30 +74,32 @@ nav .navbar li a:hover {
     transition: all 0.2s ease-in-out;
 }
 
-i{
+i {
     display: none;
     font-size: 40px;
     color: #00695c;
 }
-#menubutton{
-    padding-top: 10px;
+
+#menubutton {
+    padding-bottom: 5px;
+    padding-top: 6px;
 }
 
 /* CSS */
-.button-36{
-    background-image: linear-gradient(145.88deg, #00695c);
-    border-radius: 25px;
+.button-36 {
+    background-image: linear-gradient(to right, #008d7d, #00695C);
+    border-radius: 20px;
     border-style: none;
     box-sizing: border-box;
     color: #FFFFFF;
     font-weight: 700;
     cursor: pointer;
     flex-shrink: 0;
-    font-family: 'playfair display';
+    font-family: 'lexend';
     font-size: 16px;
-    height: 4rem;
-    letter-spacing: 0.5px;
-    word-spacing: 1px;
+    height: 45px;
+    letter-spacing: 0.4px;
+    word-spacing: 0.9px;
     padding: 0 1.6rem;
     text-align: center;
     text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
@@ -116,12 +116,112 @@ i{
 }
 
 .navbar .text {
-    font-family: 'playfair display';
-    font-weight: 700;
+    font-family: 'Protest Guerrilla';
+    font-weight: 100;
+    letter-spacing: 1.5px;
     font-size: 34px;
     color: #00695C;
 }
 
 .navbar .text i {
     padding: 0 10px;
+}
+
+.hero {
+    padding: 255px 0 2270px;
+}
+
+section {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.text {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-family: 'amita';
+    font-weight: 500;
+    padding-bottom: 15px;
+    font-size: 65px;
+    line-height: 75px;
+    letter-spacing: .5px;
+    color: #01423a;
+}
+
+.div-content {
+    padding: 0 200px;
+}
+
+.text span {
+    line-height: 10px;
+    font-family: 'oswald';
+    font-weight: 400;
+    font-style: italic;
+    height: 70px;
+    color: #00311096;
+    font-size: 45px;
+}
+
+p {
+    font-family: 'lexend';
+    font-weight: 300;
+    text-align: center;
+    font-size: 15.5px;
+    padding: 30px 0px 20PX;
+    color: #012e23;
+}
+
+/* Bottom UL Styling */
+.bottom1 {
+    /*position: fixed;  stays visible at bottom of viewport */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    padding: 15px 20px;
+    margin: 0;
+    list-style: none;
+}
+
+.bottom1 li {
+    font-family: 'ubuntu';
+    display: flex;
+    text-align: justify;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.2rem;
+    color: #00311096;
+    font-weight: 400;
+}
+
+.bottom1 li span1 {
+    font-size: 30px;
+    color: #01423a;
+}
+
+/* CTA Button */
+.cta-btn {
+    background: linear-gradient(to right, #008d7d, #00695C);
+    color: white;
+    border: none;
+    font-family: 'ubuntu';
+    border-radius: 20px;
+    height: 42px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.cta-btn:hover {
+    background: linear-gradient(to bottom, #008d7d, #00695C);
 }
