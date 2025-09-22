@@ -1,37 +1,73 @@
-@media only screen and (max-width: 1500px) {
-   nav .navbar .menu ul li{
-    display: none;
-   }
-   
-}
-@media only screen and (max-width: 1050px){
-    nav .navbar{
-    padding: 0 18px;
-   }
-   .navbar .text i{
-    font-size: 20px;
-   }
-   nav .thelogo img{
-    width: 20px;
-   }
-}
-@media only screen and (max-width: 700px) {
-    .navbar .text{
-        font-size: 18px;
-    }
-    nav{
-      padding: 10px;
-    }
+@media only screen and (max-width: 1060px) {
+  * {
+    padding: 1px;
+  }
 
-}
-@media (max-width: 768px) {
-  .button-36 {
-    height: 2.8rem;
+  nav{
+    padding-top: 10px;
+  }
+
+ .navbar  .text{
+    font-size: 24px;
+  }
+
+  .home {
+    padding-top: 40px;
+  }
+
+  p {
     font-size: 12px;
+  }
+
+  nav .navbar .menu ul {
     display: none;
   }
-  i{
-    display: block;
-    font-size: 30px;
-    }
+
+  .button-36 {
+    display: none;
   }
+
+  i {
+    font-size: 30px;
+    display: block;
+    padding-top: 0.1px;
+  }
+
+  h1 {
+    font-size: 50px;
+    line-height: 60px;
+  }
+
+  .text span {
+    font-size: 30px;
+    line-height: 60px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  p {
+    font-size: 10px;
+  }
+
+  nav{
+    padding-top: 9px;
+  }
+
+  h1 {
+    font-size: 35px;
+    line-height: 50px;
+  }
+
+  .text span {
+    font-size: 30px;
+    line-height: 50px;
+    padding-bottom: 10px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  p {
+    font-size: 7px;
+    padding-top: 2px;
+  }
+}
